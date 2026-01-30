@@ -46,17 +46,22 @@ import { SITE_TITLE } from '../consts';
 	header {
 		margin: 0;
 		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
+		background: var(--jazz-darker);
+		border-bottom: 2px solid rgba(212, 175, 55, 0.35);
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 	}
 	h2 {
 		margin: 0;
-		font-size: 1em;
+		font-size: 1.25em;
+		font-family: "Playfair Display", Georgia, serif;
 	}
-
 	h2 a,
 	h2 a.active {
 		text-decoration: none;
+		color: var(--jazz-gold);
+	}
+	h2 a:hover {
+		color: var(--jazz-cream);
 	}
 	nav {
 		display: flex;
@@ -65,17 +70,28 @@ import { SITE_TITLE } from '../consts';
 	}
 	nav a {
 		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
+		color: var(--jazz-cream);
+		border-bottom: 3px solid transparent;
 		text-decoration: none;
+		transition: color 0.2s ease, border-color 0.2s ease;
+	}
+	nav a:hover {
+		color: var(--jazz-gold);
 	}
 	nav a.active {
 		text-decoration: none;
-		border-bottom-color: var(--accent);
+		border-bottom-color: var(--jazz-gold);
+		color: var(--jazz-gold);
 	}
 	.social-links,
 	.social-links a {
 		display: flex;
+	}
+	.social-links a {
+		color: var(--jazz-muted);
+	}
+	.social-links a:hover {
+		color: var(--jazz-gold);
 	}
 	@media (max-width: 720px) {
 		.social-links {

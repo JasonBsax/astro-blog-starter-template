@@ -13,7 +13,11 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>Digital Entrepreneurship</h1>
+			<section class="jazz-hero">
+				<p class="jazz-hero-label">✦ Est. 2022</p>
+				<h1>Digital Entrepreneurship</h1>
+				<p class="jazz-hero-tagline">A little night music for your ideas.</p>
+			</section>
 			<p>
 				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
 				template serves as a lightweight, minimally-styled starting point for anyone looking to build
@@ -48,3 +52,31 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Footer />
 	</body>
 </html>
+
+<style>
+	.jazz-hero {
+		text-align: center;
+		padding: 2.5em 0 3em;
+		margin-bottom: 2em;
+		border-bottom: 1px solid rgba(212, 175, 55, 0.25);
+	}
+	.jazz-hero-label {
+		font-size: 0.85em;
+		letter-spacing: 0.25em;
+		text-transform: uppercase;
+		color: var(--jazz-gold);
+		margin: 0 0 0.5em;
+		opacity: 0.9;
+	}
+	.jazz-hero h1 {
+		margin: 0;
+		font-size: 2.75em;
+		letter-spacing: 0.03em;
+	}
+	.jazz-hero-tagline {
+		margin: 0.75em 0 0;
+		font-style: italic;
+		color: var(--jazz-cream-dim);
+		font-size: 1.1em;
+	}
+</style>
