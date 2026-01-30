@@ -6,7 +6,10 @@ import HeaderLink from './HeaderLink.astro';
 	<nav>
 		<h2 class="header-home">
 			<a href="/" aria-label="Home">
-				<img src="https://png.pngtree.com/png-clipart/20210804/ourmid/pngtree-abstract-line-drawing-playing-saxophone-png-image_3776754.jpg" alt="" class="header-logo" width="40" height="40" />
+				<svg class="header-home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" width="28" height="28">
+					<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+					<polyline points="9 22 9 12 15 12 15 22" />
+				</svg>
 			</a>
 		</h2>
 		<div class="internal-links">
@@ -68,16 +71,12 @@ import HeaderLink from './HeaderLink.astro';
 		display: inline-block;
 		padding: 0.5em 0;
 	}
-	.header-logo {
+	.header-home-icon {
 		display: block;
-		height: 36px;
-		width: auto;
-		object-fit: contain;
-		filter: brightness(0) invert(0.9);
-		transition: filter 0.2s ease;
-	}
-	h2 a:hover .header-logo {
-		filter: brightness(0) invert(1);
+		height: 28px;
+		width: 28px;
+		color: inherit;
+		transition: color 0.2s ease;
 	}
 	h2 a:hover {
 		color: var(--jazz-cream);
