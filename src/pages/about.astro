@@ -3,11 +3,17 @@ import Layout from '../layouts/BlogPost.astro';
 ---
 
 <Layout
-	title="About Me"
-	description="Lorem ipsum dolor sit amet"
-	pubDate={new Date('August 08 2021')}
+	title="Advertisment Analytics"
+	description="google ad analtics"
+	pubDate={new Date('March 08 2026')}
 	heroImage="/blog-placeholder-about.jpg"
 >
+	<div class="photo-gallery">
+		<img src="/images/campaigns-ads.png" alt="Google Ads Campaigns overview" />
+		<img src="/images/insights-ads.png" alt="Google Ads Insights dashboard" />
+		<img src="/images/barbers-big-ballin-band.png" alt="Barber's Big Ballin' Band promotional poster" />
+	</div>
+
 	<p>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 		labore et dolore magna aliqua. Vitae ultricies leo integer malesuada nunc vel risus commodo
@@ -60,3 +66,18 @@ import Layout from '../layouts/BlogPost.astro';
 		proin gravida. Egestas integer eget aliquet nibh praesent tristique magna.
 	</p>
 </Layout>
+
+<style>
+	.photo-gallery {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 1.5em;
+		margin-bottom: 2em;
+	}
+	.photo-gallery img {
+		width: 100%;
+		height: auto;
+		border-radius: 12px;
+		box-shadow: var(--box-shadow);
+	}
+</style>
